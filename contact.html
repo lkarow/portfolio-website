@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.production.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Contact Lennart</title>
 </head>
 <body>
@@ -36,11 +36,11 @@
 
     <main class="page-main">
         <h1>Contact</h1>
-        <a href="mailto:lkarow@online.de"><button class="button__primary">Write me an e-mail</button></a><br><br>
+        <a class="button__primary" href="mailto:lkarow@online.de">Write me an e-mail</a><br><br>
 
         <!-- Contact form -->
-        <form class="contact-form__form" action="" method="post">
-            <label class="contact-form__label" for="contact-name">Name * </label><br>
+        <form class="contact-form__form" action="/login-form-action" method="post">
+            <label class="contact-form__label" for="contact-name">Name Surname * </label><br>
             <input class="contact-form__input" id="contact-name" type="text" name="contact-name" pattern="[A-Za-z]+\s[A-Za-z]+" required>
             <br>
             <label class="contact-form__label" for="contact-mail">E-mail * </label><br>
