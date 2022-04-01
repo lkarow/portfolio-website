@@ -205,7 +205,7 @@ table {
 
 .profile {
     line-height: .5;
-    margin: 0 auto;
+    margin: 50px auto;
     max-width: 700px;
 }
 
@@ -362,11 +362,11 @@ table {
 
 @media screen and (max-width: 600px) {
     .profile__portrait {
-    width: 250px;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+        width: 250px;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
        
@@ -376,7 +376,7 @@ table {
     }
 
     .profile p {
-    font-size: 20px;
-    text-align: center;
+        font-size: 20px;
+        text-align: center;
     }
 }
