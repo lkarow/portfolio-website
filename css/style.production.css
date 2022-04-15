@@ -255,6 +255,7 @@ table {
   width: 250px;
 }
 
+/* animation profile heading bounceIn */
 @-webkit-keyframes bounce-in {
   0% {
     -webkit-transform: scale(0.5);
@@ -273,7 +274,6 @@ table {
             transform: scale(1);
   }
 }
-
 @keyframes bounce-in {
   0% {
     -webkit-transform: scale(0.5);
@@ -323,7 +323,28 @@ table {
 
 .page-footer__icon {
   height: 30px;
+  margin: 0 10px 10px;
   width: 30px;
+}
+
+.page-footer__icon:hover,
+.page-footer__icon:focus {
+  -webkit-animation: rotate-icon 1s ease-in-out;
+          animation: rotate-icon 1s ease-in-out;
+}
+
+@-webkit-keyframes rotate-icon {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-icon {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /* svg */
@@ -465,10 +486,8 @@ table {
 
   .project-list__item:last-child {
     -ms-grid-row: 1;
-    grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 4;
-    grid-column: 4;
     -ms-grid-column-span: 1;
     grid-area: 1 / 4 / 3 / 5;
   }
