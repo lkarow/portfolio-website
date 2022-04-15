@@ -264,7 +264,19 @@ table {
 
 .page-footer__icon {
   height: 30px;
+  margin: 0 10px 10px 10px;
   width: 30px;
+}
+
+.page-footer__icon:hover,
+.page-footer__icon:focus {
+  animation: rotate-icon 1s ease-in-out;
+}
+
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(360deg);
+  }
 }
 
 /* svg */
