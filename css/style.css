@@ -330,7 +330,8 @@ table {
 
 /* start grid fallback */
 .project-list__item {
-  border: 2px dashed var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
   display: inline-block;
   width: 33%;
 }
@@ -350,20 +351,34 @@ table {
 
 /* end grid fallback */
 
+.project-list__img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.project-list__built {
+  display: inline-block;
+  margin: 10px;
+}
+
+.project-list__icon {
+  display: inline-block;
+  height: 30px;
+  margin: 0 auto;
+  width: 30px;
+}
+
 @supports (display: grid) {
   .project-list {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .project-list__item {
+    border-radius: 8px;
     padding: 10px;
     width: auto;
-  }
-
-  .project-list__item:last-child {
-    grid-area: 1 / 4 / 3 / 5;
   }
 }
 
@@ -384,11 +399,6 @@ table {
     grid-gap: 10px;
     margin-left: 15px;
     margin-right: 15px;
-  }
-
-  .project-list__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
   }
 
   body {
